@@ -3,23 +3,50 @@
 <html>
 
 <head>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
 
 </head>
 
 <body>
 
-    <div class="screen one"></div>
+    <div class="wrapper">
 
-    <div class="screen two"></div>
+        <div class="screen one">
+            <div class="inner"></div>
+        </div>
 
-    <div class="screen three"></div>
+        <div class="screen two"></div>
+
+        <div class="screen three"></div>
+    </div>
 
     <style>
 
-        .screen{
-           margin: 0 auto;
+        body{
+            min-width: 100%;
+            margin: 0;
+        }
+
+        .inner{
+            height: 10%;
+            width: 60px;
+            background-color: black;
+            float: right;
+        }
+
+        .wrapper{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 0px;
         }
 
         .one{
